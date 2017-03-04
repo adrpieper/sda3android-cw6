@@ -25,6 +25,7 @@ public class ListTest {
 
         System.out.println(ListMath.sum(numbers));
         System.out.println(ListMath.max(numbers));
+        System.out.println(ListMath.maxIndex(numbers));
 
     }
 }

@@ -24,4 +24,17 @@ public class ListMath {
         }
         return result;
     }
+
+    public static int maxIndex(List<Integer> numbers){
+        int index = -1;
+        int maxValue = Integer.MIN_VALUE;
+        for (int i = 0 ; i < numbers.size(); i++) {
+            if (maxValue < numbers.get(i)) {
+                maxValue = numbers.get(i);
+                index = i;
+            }
+        }
+        return index;
+    }
+
 }
