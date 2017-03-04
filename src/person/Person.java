@@ -21,13 +21,20 @@ public class Person {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Person) {
-            Person person = (Person) obj;
-            return name.equals(person.name) &&
-                    surName.equals(person.surName);
-        }else {
-            return false;
-        }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (name != null ? !name.equals(person.name) : person.name != null) return false;
+        return surName != null ? surName.equals(person.surName) : person.surName == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (surName != null ? surName.hashCode() : 0);
+        return result;
     }
 }
