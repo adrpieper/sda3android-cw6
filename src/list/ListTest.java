@@ -16,6 +16,12 @@ public class ListTest {
         for (Integer number : numbers) {
             System.out.println(number);
         }
+        System.out.println("Pierwszy element");
+        System.out.println(numbers.get(0));
+        System.out.println("Rozmiar");
+        System.out.println(numbers.size());
+
+        System.out.println(ListMath.sum(numbers));
 
     }
 }
