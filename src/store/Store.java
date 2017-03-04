@@ -16,7 +16,9 @@ public class Store {
     public void showProduct(Category category) {
 
         for (Product product : products) {
-            System.out.println(product.getName());
+            if (product.getCategory().equals(category)) {
+                System.out.println(product.getName());
+            }
         }
 
     }
