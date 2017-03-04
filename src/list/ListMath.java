@@ -14,4 +14,14 @@ public class ListMath {
         }
         return result;
     }
+
+    public static int max(List<Integer> numbers){
+        int result = Integer.MIN_VALUE;
+        for (int number : numbers) {
+            if (result < number) {
+                result = number;
+            }
+        }
+        return result;
+    }
 }
