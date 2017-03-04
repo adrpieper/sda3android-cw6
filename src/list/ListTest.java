@@ -1,7 +1,9 @@
 package list;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Adrian on 2017-03-04.
@@ -22,6 +24,7 @@ public class ListTest {
         System.out.println(numbers.size());
 
         System.out.println(ListMath.sum(numbers));
+        System.out.println(ListMath.max(numbers));
 
     }
 }
